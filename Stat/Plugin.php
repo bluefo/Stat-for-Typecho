@@ -4,11 +4,14 @@
  * 
  * @package Stat
  * @author Hanny
- * @version 1.0.2
+ * @version 1.0.4
  * @dependence 10.8.15-*
  * @link http://www.imhan.com
  *
  * 历史版本
+ * version 1.0.4 at 2023-04-12
+ * 修复PDO下数据表检测失败的错误
+ *
  * version 1.0.3 at 2018-08-24
  * 修复PDO下数据表检测失败的错误
  *
@@ -131,6 +134,6 @@ class Stat_Plugin implements Typecho_Plugin_Interface
 
     public static function singleHandle($select, $archive)
     {
-		Stat_Plugin::viewStat($select->stack[0]['cid']);
+		Stat_Plugin::viewStat($select->cid);
     }
 }
