@@ -1,6 +1,10 @@
 # Stat-for-Typecho
 Stat Plugin for Typecho to Count Page Views
 
-上传之后启用即可，在需要输出的地方插入`<?php $this->views(); ?>次浏览`这样子的代码即可，放在div或者p标签里都行。
+修复了在 Typecho 1.2 版本中不能正常更新的问题。
 
-我写的Bigfa主题必须有这个，扒来的插件，作者是[Hanny](http://www.imhan.com)
+使用方法：
+上传到usr/plugins/stat/plugins.php 后在后台启用即可。
+在需要输出的地方（比如模板的post.php中）插入`<?php $this->views(); ?>次浏览`的代码即可。
+
+
